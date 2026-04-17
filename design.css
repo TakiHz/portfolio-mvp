@@ -90,6 +90,16 @@ main {
   max-width: 700px;
 }
 
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00BCD4;
+  box-shadow: 0 4px 6px rgba(0, 188, 212, 0.2);
+  margin-bottom: 1.5rem;
+}
+
 .saudacao {
   font-size: 1.2rem;
   color: #00838F;
