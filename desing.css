@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #2c3e50;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0f2f1;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iniciais {
+  background-color: #00BCD4;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.nome {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #00838F;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #006064;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #00BCD4;
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero {
+  padding: 3rem 0 4rem;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.saudacao {
+  font-size: 1.2rem;
+  color: #00838F;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #006064;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: #546E7A;
+  margin-bottom: 2rem;
+}
+
+.botoes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primario {
+  background-color: #00BCD4;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,188,212,0.2);
+}
+
+.btn-primario:hover {
+  background-color: #0097A7;
+  transform: translateY(-2px);
+}
+
+.btn-secundario {
+  background-color: #E1F5FE;
+  color: #00838F;
+}
+
+.btn-secundario:hover {
+  background-color: #B3E5FC;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #006064;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: #78909C;
+  margin-bottom: 2rem;
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0f2f1;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,188,212,0.08);
+  border-color: #B2EBF2;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #00838F;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  color: #546E7A;
+  margin-bottom: 1.5rem;
+}
+
+.links-projeto {
+  display: flex;
+  gap: 1rem;
+}
+
+.card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #E1F5FE;
+  color: #00838F;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.card a:hover {
+  background-color: #B3E5FC;
+}
+
+.contato-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contato-card {
+  background: #F7FDFF;
+  border: 1px solid #B2EBF2;
+  border-radius: 40px;
+  padding: 0.9rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #00838F;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.contato-card i {
+  font-size: 1.3rem;
+  color: #00BCD4;
+}
+
+.contato-card:hover {
+  background: #E1F5FE;
+  border-color: #00BCD4;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #78909C;
+  border-top: 1px solid #e0f2f1;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav {
+    gap: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .botoes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
